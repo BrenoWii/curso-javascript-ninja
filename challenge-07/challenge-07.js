@@ -1,38 +1,43 @@
 /*
 Crie um array com 5 items (tipos variados).
 */
-// ?
+var variados = ['breno', 'william', 'branco' ,1.95,22];
 
 /*
 Crie uma função chamada `addItem`, que irá adicionar itens no array criado.
 A função deverá retornar o array atualizado.
 */
-// ?
+function additem (valor){
+	variados.push(valor) ;
+
+}
 
 /*
 Adicione um novo array ao array criado no início do desafio, com ao menos 3
 itens de tipos diferentes, mostrando o resultado no console.
 */
-// ?
+additem (['teste',{data:10, mes:12,ano:2000}]); 
 
 /*
 Mostre no console o segundo elemento desse último array, criado acima, com a
 frase:
 "O segundo elemento do segundo array é [ELEMENTO]."
 */
-// ?
+console.log('O segundo elemento do segundo array é '+ variados[5][1].data );
+VM142:1 O segundo elemento do segundo array é 10
 
 /*
 Mostre no console quantos itens tem o primeiro array criado, com a frase:
 "O primeiro array tem [QUANTIDADE DE ITENS] itens."
 */
-// ?
-
+console.log('O primeiro array tem '+ variados.length + 'itens.') 
+O primeiro array tem 6itens.
 /*
 Agora mostre no console quantos itens tem o segundo array criado, com a frase:
 "O segundo array tem [QUANTIDADE DE ITENS] itens."
 */
-// ?
+console.log('O segundo array tem '+variados[5].length+'itens')
+VM226:1 O segundo array tem 2itens
 
 /*
 Utilizando a estrutura de repetição `while`, mostre no console todos os números
